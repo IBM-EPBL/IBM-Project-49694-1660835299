@@ -1,28 +1,25 @@
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Handwritten Digit Recognition</title>
-        <link rel="icon" type="image/svg" sizes="32x32" href="{{url_for('static',filename='images/icon.svg')}}" />
-        <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}" />
-        <script src="https://unpkg.com/feather-icons"></script>
-        <script defer src="{{url_for('static',filename='js/script.js')}}"></script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="heading">
-                <h1 class="heading__main">Handwritten Digit Recognizer</h1>
-                <h2 class="heading__sub">Easily analyze and detect handwritten digits</h2>
-            </div>
-            <div class="upload-container">
-                <div class="form-wrapper">
-                    <form class="upload" action="/predict" method="post" enctype="multipart/form-data">
-                        <label id="label" for="upload-image"><i data-feather="file-plus"></i>Select File</label>
-                        <input type="file" name="photo" id="upload-image" hidden />
-                        <button type="submit" id="up_btn"></button>
-                    </form>
-                    <img id="loading" src="{{url_for('static',filename='images/loading.gif')}}">
-                </div>
-            </div>
-        </div>
-    </body>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <title></title>
+  </head>
+  <body>
+    <title>Digit Recognisation</title>
+    <div class="nav">
+    <ul>
+          <li><a href="index">Home</a></li>
+          <li><a href="recognise">Recognise</a></li>
+    </ul>
+    </div>
+    <div class="main">
+      <h1>DIGIT RECOGNISATION</h1>
+      <p class="tip"><center><i>The handwritten digit recognition is the ability of computers to recognize human handwritten digits.
+        It is a hard task for the machine because handwritten digits are not perfect and can be made with many different flavors.
+        The handwritten digit recognition is the solution to this problem which uses the image of a digit and recognizes the digit present in the image.
+      </center></i></p>
+    </div>
+
+  </body>
 </html>
